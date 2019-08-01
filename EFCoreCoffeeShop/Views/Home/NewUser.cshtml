@@ -1,0 +1,12 @@
+﻿@model EFCoreCoffeeShop.CoffeeShop.UserInfo
+@{
+    ViewData["Title"] = "NewUser";
+}
+
+<h2>Welcome, @Model.UserName</h2>
+
+@Html.ActionLink("LogOut", "LogOut")
+<button class="btn btn-secondary" type="button" id="addItem"
+        onclick="location.href='@Url.Action("LogOut", "UserInfoes")'">
+    Logout
+</button>
